@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tạo bảng</title>
+</head>
+<body>
+    <style>
+        body{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 100%;
+        }
+        table, td, th{
+            border-bottom: 1px solid #333;
+            border-collapse: collapse;
+        }
+        td, th{
+            padding: 6px 10px;
+        }
+        table thead th{
+            text-align: left;
+        }
+        .table.table-dark{
+            background: #000;
+            color: #fff;
+        }
+        .table.table-hover tbody tr:hover{
+            background: #333;
+        }
+        .table.table-striped tbody tr:nth-last-child(odd){
+            background: #333;
+        }
+    </style>
+    <h1>bảng</h1>
+    <table class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Họ</th>
+                <th>Tên</th>
+                <th>Giới tính</th>
+                <th>Lương</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Vũ</td>
+                <td>Đức Anh</td>
+                <td>Nam</td>
+                <td>1000 $</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td>2</td>
+            <td>Phạm</td>
+            <td>Quang Sáng</td>
+            <td>Nam</td>
+            <td>2000 $</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn</td>
+            <td>Thành Quang</td>
+            <td>Nam</td>
+            <td>2000 $</td>
+        <tfoot>
+            <td colspan="4">Tổng</td>
+            <td>5000$</td>
+        </tfoot>
+    </table>
+    <h2> table striped</h2>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Họ</th>
+                <th>Tên</th>
+                <th>Giới tính</th>
+                <th>Lương</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Vũ</td>
+                <td>Đức Anh</td>
+                <td>Nam</td>
+                <td>1000 $</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td>2</td>
+            <td>Phạm</td>
+            <td>Quang Sáng</td>
+            <td>Nam</td>
+            <td>2000 $</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn</td>
+            <td>Thành Quang</td>
+            <td>Nam</td>
+            <td>2000 $</td>
+        </tr>
+        <tfoot>
+            <td colspan="4">Tổng</td>
+            <td>5000$</td>
+        </tfoot>
+    </table>
+</body>
+</html>
