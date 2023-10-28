@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+        integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+        integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            background: #16819d;
+            background: linear-gradient(141deg, #16819d 0%, #f7fff7 80%);
+            background: -webkit-linear-gradient(141deg, #16819d 0%, #f7fff7 80%);
+            background: -moz-linear-gradient(141deg, #16819d 0%, #f7fff7 80%);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../23_project/img/mc1.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Ban giám hiệu
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Khoa chuyên môn
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Khoa CNTT</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa ngoại ngữ</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Khoa SP</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa Du lịch</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Phòng ban
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Phòng đào tạo</a></li>
+                            <li><a class="dropdown-item" href="#">Phòng hành chính</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Phòng Khảo thí</a></li>
+                            <li><a class="dropdown-item" href="#"> Phòng Kế toán</a></li>
+                            <li><a class="dropdown-item" href="#">Trung tâm TH</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Công đoàn</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="dropdown open">
+        <button class="btn btn-dark dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown Button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="triggerId">
+            <button class="dropdown-item" href="#">Action</button>
+            <button class="dropdown-item" href="#">Disabled action</button>
+        </div>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Khoa/Phòng</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="visually-hidden">Khoa CNTT</span>
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Khoa CNTT</a>
+            <a class="dropdown-item" href="#">Khoa Hóa</a>
+            <a class="dropdown-item disabled" href="#">Khoa luật</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Phòng Khoa học</a>
+            <a class="dropdown-item" href="#">Phòng Đào tạo</a>
+        </div>
+    </div><br>
+
+    <div class="btn-group-vertical" role="group" aria-label="">
+        <div class="btn-group dropend" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Khoa Môi trường
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Bộ môn Hóa hữu cơ</a>
+                <a class="dropdown-item" href="#">Bộ môn Hóa vô cơ</a>
+                <a class="dropdown-item" href="#">VP Khoa</a>
+            </div>
+        </div>
+        <div class="btn-group dropend" role="group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Khoa CNTT
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Bộ môn CNPM</a>
+                <a class="dropdown-item" href="#">Bộ môn TTNT</a>
+                <a class="dropdown-item" href="#">Bộ môn mạng</a>
+            </div>
+        </div>
+        <div class="btn-group dropend" role="group">
+            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Khoa Ngoại ngữ
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                <a class="dropdown-item" href="#">Tiếng Anh</a>
+                <a class="dropdown-item" href="#">Tiếng Hàn</a>
+                <a class="dropdown-item" href="#">Tiếng Trung</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> VP Khoa</a>
+            </div>
+        </div>
+        <div>
+            <!-- Modal trigger button -->
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+                Launch
+            </button>
+
+            <!-- Modal Body -->
+            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+            <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Body
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Optional: Place to the bottom of scripts -->
+            <script>
+                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+            </script>
+        </div>
+        <form action="." method="get" class="was-validated">
+            <div class="col-md-4">
+                <label for="" class="form-label">User name</label>
+                <input type="text" class="form-control" id="" value="" required>
+                <div class="valid feedback">Valid.</div>
+                <div class="invalid-feedback">Pls fill out this check box</div>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Password</label>
+                <input type="password" class="form-control" name="" id="" required>
+                <div class="valid feedback">Valid.</div>
+                <div class="invalid-feedback">Check this check box</div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="">
+                <label class="form-check-label" for="">
+                    Lưu mật khẩu
+                </label>
+                <div class="valid feedback">Valid.</div>
+                <div class="invalid-feedback">Check this check box</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+</body>
+
+</html>
