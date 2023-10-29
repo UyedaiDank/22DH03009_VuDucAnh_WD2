@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaS</title>
+    <script src="MyJS/myJS.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="mb-3">
+                    <label for="txtName" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="txtName" id="txtName"
+                        aria-describedby="txtNameHelp" placeholder="enter name">
+                </div>
+                <div class="mb-3">
+                    <label for="numGrade" class="form-label">Grade</label>
+                    <input type="number" class="form-control" name="numGrade" id="Mark" aria-describedby="helpId"
+                        placeholder="enter mark">
+                </div>
+                <button class="btn btn-primary" onclick="check();">Submit</button>
+                <br>
+                <span class="text text-danger" id="sumit"></span>
+            </div>
+        </div>
+    </div>
+    
+    <h2>java in body</h2>
+    <p id="demo">demo</p>
+    <button type="button" onclick="myFunction">Try it</button>
+    <p id="demo1">text</p>
+    <button type="button" onclick="document.write(10+10)"> Try it</button><br>
+    <button type="button" onclick="window.print()">window print</button>
+    <font color="red">
+        <h4 id="r1"></h4>
+    </font>
+    <button type="button" class="btn btn-primary" onclick="alert(sum(5, 25));">Sum X Y</button>
+    <script>
+        let name = "Nguyễn Lê Anh";
+        let age = 25;
+        let major = "design"
+        let mark = 9.6;
+        r = "Sinh viên " + name + " học ngành " + major + " đã " + age + " tuổi được " + mark + " điểm!";
+        document.getElementById("r1").innerHTML = r;
+    </script>
+</body>
+
+</html>
