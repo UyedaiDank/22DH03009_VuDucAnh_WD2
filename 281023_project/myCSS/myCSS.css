@@ -118,7 +118,15 @@ div#footer {
     row-gap: 20px;
 }
 
+.page-header {
+    grid-area: header;
+    background-color: orange;
+}
 
+.page-rightbar {
+    grid-area: rightbar;
+    background-color: lightblue;
+}
 
 /* .page-leftbar {
     grid-area: leftbar;
